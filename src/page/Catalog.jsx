@@ -151,7 +151,7 @@ function Catalog() {
                                 </div>
 
                                 <div
-                                    className="flex items-center text-white gap-2 py-2 px-4 bg-blue-500 mt-2 rounded cursor-pointer"
+                                    className="flex hover:bg-blue-600 active:bg-red-500 items-center text-white gap-2 py-2 px-4 bg-blue-500 mt-2 rounded cursor-pointer"
                                     onClick={() => addToCart(product)}
                                 >
                                     <svg

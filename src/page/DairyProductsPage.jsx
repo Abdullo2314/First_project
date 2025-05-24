@@ -11,9 +11,9 @@ function DairyProductsPage() {
     const { toggleFavorite, favorites } = useFavorites();
 
     useEffect(() => {
-        axios.get("http://localhost:8000/api") // Укажите актуальный URL вашего API
+        axios.get("http://localhost:8000/api") 
             .then((res) => {
-                const dairyProducts = res.data.filter(product => product.category === "dairy"); // Фильтрация по "dairy"
+                const dairyProducts = res.data.filter(product => product.category === "dairy");
                 setProducts(dairyProducts);
                 setLoading(false);
             })
@@ -69,7 +69,7 @@ function DairyProductsPage() {
                                 </div>
                                 <button
                                     onClick={() => addToCart(product)}
-                                    className="flex justify-center items-center gap-2 mt-4 w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300"
+                                    className="flex justify-center active:bg-red-500 items-center gap-2 mt-4 w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300"
                                 >
                                     <ShoppingCart />
                                     Добавить в корзину

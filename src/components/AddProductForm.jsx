@@ -59,11 +59,11 @@ function AddProductForm({ onClose, onProductAdded, editingProduct }) {
     const onSubmit = async (data) => {
         const payload = {
             ...data,
-            price: parseFloat(data.price) || 0, // Гарантируем корректное число
+            price: parseFloat(data.price) || 0,
             discount: Boolean(data.discount),
         };
     
-        console.log("Отправляемые данные:", payload); // Логирование перед отправкой
+        console.log("Отправляемые данные:", payload); 
     
         const url = editingProduct
             ? `http://localhost:8000/api/${editingProduct.id}`
@@ -78,7 +78,7 @@ function AddProductForm({ onClose, onProductAdded, editingProduct }) {
                 headers: { "Content-Type": "application/json" },
             });
     
-            console.log("Ответ сервера:", res.data); // Логирование ответа
+            console.log("Ответ сервера:", res.data);
     
             onProductAdded((prev) =>
                 editingProduct

@@ -91,7 +91,7 @@ function FavoritesPage() {
 
                 <button
                   onClick={() => addToCart(product)}
-                  className="mt-3 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md transition"
+                  className="mt-3 flex  active:bg-red-500 items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md transition"
                 >
                   <ShoppingCart size={20} />
                   <span>В корзину</span>

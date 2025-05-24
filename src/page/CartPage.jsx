@@ -23,19 +23,16 @@ function CartPage() {
             .catch((err) => console.error("Ошибка загрузки корзины:", err));
     }, []);
 
-    // Функция для обновления корзины без API-запросов
     const updateCart = (newCart) => {
         localStorage.setItem("cart", JSON.stringify(newCart));
         setCartItems(newCart);
     };
 
-    // Удаление товара из корзины
     const removeFromCart = (id) => {
         const updatedCart = cartItems.filter(item => item.id !== id);
         updateCart(updatedCart);
     };
 
-    // Изменение количества товаров
     const changeQuantity = (id, delta) => {
         const updatedCart = cartItems.map((item) => {
             if (item.id === id) {
@@ -48,7 +45,6 @@ function CartPage() {
         updateCart(updatedCart);
     };
 
-    // Подсчет общей суммы
     const totalPrice = cartItems.reduce((total, item) => {
         const itemTotal = Number(item.price) * Number(item.quantity);
         return total + (isNaN(itemTotal) ? 0 : itemTotal);

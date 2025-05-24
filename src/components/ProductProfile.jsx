@@ -77,7 +77,7 @@ function ProductProfile() {
                         />
                         <button
                             onClick={handleAddToCart}
-                            className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+                            className="px-6 py-2 active:bg-red-500 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
                         >
                             Добавить в корзину
                         </button>

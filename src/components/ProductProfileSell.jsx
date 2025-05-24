@@ -58,7 +58,7 @@ function ProductProfileSell() {
                         )}
                     </div>
 
-                    <button className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors mt-6 flex items-center gap-2">
+                    <button className="px-6 py-3 active:bg-red-500 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors mt-6 flex items-center gap-2">
                         Добавить в корзину
                     </button>
                 </div>
