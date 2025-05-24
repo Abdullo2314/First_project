@@ -125,7 +125,7 @@ function RegistrationModal() {
                             )}
 
                             <div>
-                                <label className="block mb-1">Email</label>
+                                    <label className="block mb-1">Email</label>
                                 <input
                                     type="email"
                                     name="email"
