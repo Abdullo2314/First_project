@@ -3,7 +3,7 @@ import { UserPen, ChevronDown } from 'lucide-react';
 
 function Footer() {
     const [showInfo, setShowInfo] = useState(false);
-    const [showSupport, setShowSupport] = useState(false);
+    const [showSupport, setShowSupport] = useState(false);debugger
 
     return (
         <div className="bg-[#383838] px-6 py-10 sm:px-0 md:h-[402px]">
